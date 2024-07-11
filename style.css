@@ -99,11 +99,35 @@ section{
     text-align: center;
 }
 
-
-
-.icon{
-    height: 100%;
+.technology-item{
+    border: 1px solid #d1d5db;
 }
+
+.technology-item a{
+    border: 1px solid #d1d5db;
+}
+
+.unit-container{
+    background-image: url(Image/unit-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tool-container{
+    min-width: 1320px;
+}
+
+.footer{
+    background-image: url(Image/Footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-top: 3px solid #f69501;
+}
+
+
 
 
 
