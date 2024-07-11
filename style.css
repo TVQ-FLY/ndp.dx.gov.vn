@@ -45,11 +45,12 @@
 }
 
 section{
-    max-width: 1000px;
+    max-width: 1320px;
+    padding: 20px 10px;
 }
 
 .container-statistical{
-    min-width: 1000px;
+    min-width: 1320px;
     transform: translateY(-80px);
     border: 1px solid #dbe0e9;
     border-radius: 12px;
@@ -80,12 +81,30 @@ section{
 }
 
 .container-bg{
-    min-width: 1000px;
+    min-width: 1320px;
 }
 
 .search-img img{
     max-width: 350px;
 }
+
+.platform-rating{
+    align-items: center;
+}
+
+.technology-overlay h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+}
+
+
+
+.icon{
+    height: 100%;
+}
+
 
 
 
