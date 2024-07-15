@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="https://kit.fontawesome.com/1ce1030c77.js" crossorigin="anonymous"></script>
     <title>Trang thông tin điện tử Nền tảng số quốc gia</title>
 </head>
 <body>
     <!-- Navbar -->
-    <div class="navbar sticky w-full flex justify-between bg-white px-4 items-center z-50 top-0">
+    <div class="navbar sticky w-full flex justify-between bg-white px-4 items-center z-50 top-0 ">
         <a href="#">
             <img src="Image/logo.svg" alt="">
         </a>
-        <nav class="text-navbar flex items-center font-normal uppercase">
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="text-navbar flex items-center font-normal uppercase hidden sm:hidden md:block lg:block xl:block">
             <a class="p-2" href="#">Trang chủ</a>
             <a class="p-2" href="#">Nền tảng số</a>
             <a class="p-2" href="#">Doanh nghiệp nòng cốt</a>
@@ -25,7 +27,7 @@
        
         <div class="search-navbar flex items-center">
             <i class="fa-solid fa-magnifying-glass pr-3"></i>
-            <div class="login-navbar flex items-center px-3 py-2 bg-orange-400 rounded-full text-white">
+            <div class="login-navbar flex items-center px-3 py-2 bg-orange-400 rounded-full text-white hidden sm:hidden md:flex lg:flex xl:flex">
                 <i class="fa-regular fa-user"></i>
                 <p class="font-bold pl-2">Đăng nhập</p>
             </div>
@@ -49,17 +51,17 @@
     
     <!-- Statistical -->
     <div class="flex">
-        <section class="mx-auto">
-            <div class="container-statistical grid grid-cols-3 bg-white rounded-md">
-                <div class="text-center mx-7 my-7">
+        <section class="mx-auto p-5">
+            <div class="container-statistical grid grid-cols-1 bg-white rounded-md sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+                <div class="text-center mx-auto mx-7 my-7">
                     <p class="item-number">16</p>
                     <p class="item-text">Nền tảng số đăng ký</p>
                 </div>
-                <div class="text-center mx-7 my-7">
+                <div class="text-center mx-auto mx-7 my-7">
                     <p class="item-number">38</p>
                     <p class="item-text">Loại nền tảng số quốc gia</p>
                 </div>
-                <div class="text-center mx-7 my-7">
+                <div class="text-center mx-auto mx-7 my-7 sm:col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
                     <p class="item-number">2</p>
                     <p class="item-text">Doanh nghiệp nòng cốt</p>
                 </div>
@@ -72,9 +74,9 @@
     <div class="flex">
         <section class="container-solution mx-auto">
             <h2>Các loại nền tảng số</h2>
-            <div class="mt-5 mb-5">
+            <div class="mt-5 mb-5 p-3">
                 <div class="flex-col items-center justify-center space-y-8">
-                    <div class="grid grid-cols-6">
+                    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6">
                         <div class="w-32 h-32 flex flex-col items-center mx-5 mb-5">
                             <img src="Image/cloud-computing1.svg" alt="" class="mb-2">
                             <a href="#" class="text-center">Nền tảng điện toán đám mây</a>
@@ -135,9 +137,9 @@
 
     <!-- Search -->
     <div class="search flex">
-        <section class="mx-auto container-bg">
-            <div class="search-bg justify-around grid grid-cols-2 py-5 mx-auto">
-                <div class="search-box justify-center flex flex-col">
+        <section class=" container-bg">
+            <div class="search-bg justify-between grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 py-5 mx-auto">
+                <div class="search-box justify-center flex flex-col p-3">
                     <h2 class="text-3xl font-bold text-white mb-5">Tìm kiếm nền tảng số</h2>
                     <form class="">
                         <div class="relative flex">
@@ -151,7 +153,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="search-img flex justify-end">
+                <div class="search-img flex justify-end hidden sm:hidden md:hidden lg:block xl:block">
                     <img src="Image/industry.svg" class="" alt="">
                 </div>
             </div>
@@ -162,11 +164,11 @@
     <div class="flex">
         <section class="container-platform mx-auto">
             <h2 class="text-center my-7 py-5 font-bold text-4xl">Nền tảng số tiêu biểu</h2>
-            <div class="grid grid-cols-2 gap-5 justify-between mb-5">
+            <div class="gap-5 justify-between mb-5 grid grid-cols-1 sm:grid-cols-1  md:grid-cols-1  lg:grid-cols-2  xl:grid-cols-2">
                 <div class="platform-img">
                     <img src="Image/vtv2.jpg" alt="">
                 </div>
-                <div class="platform-content gap-5">
+                <div class="platform-content gap-5 leading-8">
                     <a href="#" class="font-bold text-2xl">VTV Go</a>
                     <div class="platform-rating flex gap-5">
                         <div class="platform-icon flex items-center gap-1">
@@ -184,7 +186,7 @@
                     <hr class="mt-3"></hr>
                 </div>
             </div>
-            <div class="grid grid-cols-3 mb-3">
+            <div class="grid grid-cols-1 mb-3 gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                 <div class="platform-item">
                     <img src="Image/platform02.png" alt="" class="mb-3">
                     <h2 class="font-bold mb-3">VTeleHealth</h2>
@@ -240,123 +242,11 @@
     </div>
 
     <!-- Technology -->
-    <div class="flex mt-7">
-        <section class="technology-overlay mx-auto">
+    <div class="flex pt-7 bg-slate-100">
+        <section class="technology-overlay mx-auto ">
             <h2>Tiêu chí kỹ thuật cho các nền tảng số</h2>
             <div class="mt-9 mb-5">
-                <!-- <div class="technology-position grid grid-cols-3 gap-4">
-                    <div class="technology-item rounded">
-                        <div class="p-3">
-                            <div class="technology-title">
-                                <p class="text-base font-bold">Quyết định số 1356/QĐ-BTTTT ban hành Tiêu chí đánh giá giải pháp, dịch vụ Trung tâm giám sát điều hành an toàn, an ninh...</p>
-                            </div>
-                            <div class="technology-content">
-                                <p>Loại văn bản: Quyết định</p>
-                                <p>Loại nền tảng số: Nền tảng trung tâm giám sát điều hành an toàn thông tin mạng (SOC)</p>
-                                <p>Ngày ban hành: 07/07/2022</p>
-                                <p>Trích yếu: Ban hành Tiêu chí đánh giá giải pháp, dịch vụ Trung tâm giám sát điều hành an toàn, an ninh mạng (SOC)</p>
-                                <p>Nguồn:</p>
-                            </div>
-                        </div>
-                        <a href="" class="technology-icon uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center">
-                            <span>Tải xuống</span>
-                            <i class="fa-solid fa-download"></i>
-                        </a>
-                    </div>
-                    <div class="technology-item rounded">
-                        <div class="p-3">
-                            <div class="technology-title">
-                                <p class="text-base font-bold">Quyết định số 1356/QĐ-BTTTT ban hành Tiêu chí đánh giá giải pháp, dịch vụ Trung tâm giám sát điều hành an toàn, an ninh...</p>
-                            </div>
-                            <div class="technology-content">
-                                <p>Loại văn bản: Quyết định</p>
-                                <p>Loại nền tảng số: Nền tảng trung tâm giám sát điều hành an toàn thông tin mạng (SOC)</p>
-                                <p>Ngày ban hành: 07/07/2022</p>
-                                <p>Trích yếu: Ban hành Tiêu chí đánh giá giải pháp, dịch vụ Trung tâm giám sát điều hành an toàn, an ninh mạng (SOC)</p>
-                                <p>Nguồn:</p>
-                            </div>
-                        </div>
-                        <a href="" class="technology-icon uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center">
-                            <span>Tải xuống</span>
-                            <i class="fa-solid fa-download"></i>
-                        </a>
-                    </div>
-                    <div class="technology-item rounded">
-                        <div class="p-3">
-                            <div class="technology-title">
-                                <p class="text-base font-bold">Quyết định số 1758/QĐ-BTTTT ban hành Bộ tài liệu Yêu cầu cơ bản về chức năng, tính năng kỹ thuật của Nền tảng khảo sát, thu...</p>
-                            </div>
-                            <div class="technology-content">
-                                <p>Loại văn bản: Quyết định</p>
-                                <p>Loại nền tảng số: Nền tảng khảo sát, thu thập ý kiến người dân</p>
-                                <p>Ngày ban hành: 12/09/2023</p>
-                                <p>Trích yếu: Ban hành Bộ tài liệu Yêu cầu cơ bản về chức năng, tính năng kỹ thuật của Nền tảng khảo sát, thu thập ý kiến người dân</p>
-                                <p>Nguồn:</p>
-                            </div>
-                        </div>
-                        <a href="" class="technology-icon uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center">
-                            <span>Tải xuống</span>
-                            <i class="fa-solid fa-download"></i>
-                        </a>
-                    </div>
-                    <div class="technology-item">
-                        <div class="p-3">
-                            <div class="technology-title">
-                                <p class="text-base font-bold">Quyết định 157/QĐ-BTTTT ban hành Bộ tiêu chí yêu cầu kỹ thuật tối thiểu nền tảng Họp trực tuyến</p>
-                            </div>
-                            <div class="technology-content">
-                                <p>Loại văn bản: Quyết định</p>
-                                <p>Loại nền tảng số: Nền tảng họp trực tuyến thế hệ mới</p>
-                                <p>Ngày ban hành: 28/01/2022</p>
-                                <p>Trích yếu: Ban hành Bộ tiêu chí yêu cầu kỹ thuật tối thiểu nền tảng Họp trực tuyến</p>
-                                <p>Nguồn:</p>
-                            </div>
-                        </div>
-                        <a href="" class="technology-icon uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center">
-                            <span>Tải xuống</span>
-                            <i class="fa-solid fa-download"></i>
-                        </a>
-                    </div>
-                    <div class="technology-item">
-                        <div class="p-3">
-                            <div class="technology-title">
-                                <p class="text-base font-bold">Quyết định 157/QĐ-BTTTT ban hành Bộ tiêu chí yêu cầu kỹ thuật tối thiểu nền tảng Họp trực tuyến</p>
-                            </div>
-                            <div class="technology-content">
-                                <p>Loại văn bản: Quyết định</p>
-                                <p>Loại nền tảng số: Nền tảng họp trực tuyến thế hệ mới</p>
-                                <p>Ngày ban hành: 28/01/2022</p>
-                                <p>Trích yếu: Ban hành Bộ tiêu chí yêu cầu kỹ thuật tối thiểu nền tảng Họp trực tuyến</p>
-                                <p>Nguồn:</p>
-                            </div>
-                        </div>
-                        <a href="" class="technology-icon uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center">
-                            <span>Tải xuống</span>
-                            <i class="fa-solid fa-download"></i>
-                        </a>
-                    </div>
-                    <div class="technology-item">
-                        <div class="p-3">
-                            <div class="technology-title">
-                                <p class="text-base font-bold">Quyết định 157/QĐ-BTTTT ban hành Bộ tiêu chí yêu cầu kỹ thuật tối thiểu nền tảng Họp trực tuyến</p>
-                            </div>
-                            <div class="technology-content">
-                                <p>Loại văn bản: Quyết định</p>
-                                <p>Loại nền tảng số: Nền tảng họp trực tuyến thế hệ mới</p>
-                                <p>Ngày ban hành: 28/01/2022</p>
-                                <p>Trích yếu: Ban hành Bộ tiêu chí yêu cầu kỹ thuật tối thiểu nền tảng Họp trực tuyến</p>
-                                <p>Nguồn:</p>
-                            </div>
-                        </div>
-                        <a href="" class="technology-icon uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center">
-                            <span>Tải xuống</span>
-                            <i class="fa-solid fa-download"></i>
-                        </a>
-                    </div>
-                </div> -->
-
-
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                     <div class="box">
                         <div class="content p-3">
                             <div class="technology-title">
@@ -479,7 +369,7 @@
     <div class="unit-container flex py-5">
         <section class="mx-auto justify-center my-5">
             <p class="text-3xl font-bold text-center justify-center">Đơn vị có nền tảng số tiêu biểu</p>
-            <div class="grid grid-cols-2 mt-7 gap-5">
+            <div class="grid grid-cols-1 mt-7 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
                 <div class="unit-item">
                     <img src="https://ndp.dx.gov.vn/media/4yvfvpn1/mobifone.webp" alt="" width="400px">
                     <p class="text-center">Tổng công ty Viễn thông Mobifone</p>
@@ -499,7 +389,7 @@
     <div class=" flex">
         <section class="tool-container mx-auto">
             <p class="text-3xl font-bold mb-5">Công cụ hỗ trợ</p>
-            <div class="grid grid-cols-3 gap-10 pt-5">
+            <div class="grid grid-cols-1 gap-10 pt-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                 <div class="tool-item">
                     <div class="tool-list flex justify-between mb-3">
                         <p>Cổng thông tin đánh giá & xếp hạng CĐS</p>
@@ -571,6 +461,6 @@
             </div>
         </section>
     </footer>
-
+    <script type="text/JavaScript" src="/script.js"></script>
 </body>
 </html>

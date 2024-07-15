@@ -29,12 +29,12 @@
 }
 
 section{
-    max-width: 1320px;
-    padding: 20px 10px;
+    width: 1320px;
+    margin: 0 auto;
 }
 
 .container-statistical{
-    min-width: 1320px;
+    /* min-width: 1320px; */
     transform: translateY(-80px);
     border: 1px solid #dbe0e9;
     border-radius: 12px;
@@ -65,7 +65,7 @@ section{
 }
 
 .container-bg{
-    min-width: 1320px;
+    /* min-width: 1320px; */
 }
 
 .search-img img{
@@ -125,7 +125,7 @@ section{
 }
 
 .tool-container{
-    min-width: 1320px;
+    /* min-width: 1320px; */
 }
 
 .footer{
