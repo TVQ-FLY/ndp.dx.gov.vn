@@ -8,6 +8,10 @@
     border-bottom: 1px solid #d1d5db;
 }
 
+.login{
+    width: 95px;
+}
+
 .banner{
     height: 250px;
 }
@@ -16,6 +20,7 @@
 .text-banner{
     transform: translate(-50%, -50%);
     z-index: 1;
+    line-height: 60px;
 }
 
 .image-banner{
@@ -29,11 +34,10 @@
 section{
     width: 450px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 50px 20px;
 }
 
 .container-statistical{
-    /* min-width: 1320px; */
     transform: translateY(-80px);
     border: 1px solid #dbe0e9;
     border-radius: 12px;
@@ -70,13 +74,6 @@ section{
 
 .platform-rating{
     align-items: center;
-}
-
-.technology-overlay h2{
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 46px;
-    text-align: center;
 }
 
 
