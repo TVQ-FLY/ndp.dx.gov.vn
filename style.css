@@ -15,7 +15,6 @@
 
 .text-banner{
     transform: translate(-50%, -50%);
-    /* font-size: 44px; */
     z-index: 1;
 }
 
@@ -30,6 +29,7 @@
 section{
     width: 450px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .container-statistical{
