@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class="navbar sticky w-full flex justify-between bg-white px-4 items-center">
+    <div class="navbar sticky w-full flex justify-between bg-white px-4 items-center z-50 top-0">
         <a href="#">
             <img src="Image/logo.svg" alt="">
         </a>
@@ -33,18 +33,18 @@
     </div>
 
     <!-- Banner -->
-    <div class="banner w-full">
-        <video autoplay loop muted defaultmuted playsinline class="video-banner">
+    <div class="banner w-full relative overflow-hidden">
+        <video autoplay loop muted defaultmuted playsinline class="video-banner absolute w-auto h-auto min-w-full min-h-full">
             <source type="video/mp4" src="Image/video-banner.mp4">
         </video>
-        <div class="text-banner absolute text-white font-bold">
+        <div class="text-banner absolute text-white font-bold absolute top-1/2 left-1/3 text-white text-4xl">
             <p>Trang thông tin điện tử</p>
             <p>Nền tảng số quốc gia</p>
             <p>phục vụ chuyển đổi số,</p>
             <p>phát triển chính phủ số,</p>
             <p>kinh tế số, xã hội số</p>
         </div>
-        <img src="Image/drum-banner.png" alt="" class="image-banner">
+        <img src="Image/drum-banner.png" alt="" class="image-banner overflow-hidden">
     </div>
     
     <!-- Statistical -->
@@ -210,7 +210,7 @@
                         </div>
                         <div class="platform-itemAchieve flex gap-1">
                             <img src="Image/tick.svg" alt="">
-                            <p class="text-yellow-500">Nền tảng số tiềm năng<br>
+                            <p class="text-yellow-600">Nền tảng số tiềm năng<br>
                                 trở thành Nền tảng số quốc gia</p>
                         </div>
                     </div>
@@ -226,7 +226,7 @@
                         </div>
                         <div class="platform-itemAchieve flex gap-1">
                             <img src="Image/tick.svg" alt="">
-                            <p class="text-yellow-500">Nền tảng số tiềm năng<br>
+                            <p class="text-yellow-600">Nền tảng số tiềm năng<br>
                                 trở thành Nền tảng số quốc gia</p>
                         </div>
                     </div>
@@ -244,7 +244,7 @@
         <section class="technology-overlay mx-auto">
             <h2>Tiêu chí kỹ thuật cho các nền tảng số</h2>
             <div class="mt-9 mb-5">
-                <div class="technology-position grid grid-cols-3 gap-4">
+                <!-- <div class="technology-position grid grid-cols-3 gap-4">
                     <div class="technology-item rounded">
                         <div class="p-3">
                             <div class="technology-title">
@@ -353,7 +353,120 @@
                             <i class="fa-solid fa-download"></i>
                         </a>
                     </div>
+                </div> -->
+
+
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="box">
+                        <div class="content p-3">
+                            <div class="technology-title">
+                                <p class="text-base font-bold">Quyết định 157/QĐ-BTTTT ban hành Bộ tiêu chí yêu cầu kỹ thuật tối thiểu nền tảng Họp trực tuyến</p>
+                            </div>
+                            <div class="technology-content">
+                                <p>Loại văn bản: Quyết định</p>
+                                <p>Loại nền tảng số: Nền tảng họp trực tuyến thế hệ mới</p>
+                                <p>Ngày ban hành: 28/01/2022</p>
+                                <p>Trích yếu: Ban hành Bộ tiêu chí yêu cầu kỹ thuật tối thiểu nền tảng Họp trực tuyến</p>
+                                <p>Nguồn:</p>
+                            </div>
+                        </div>
+                        <div class="download flex uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center text-amber-600">
+                            <p>Tải xuống</p>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content p-3">
+                            <div class="technology-title">
+                                <p class="text-base font-bold">Quyết định số 1356/QĐ-BTTTT ban hành Tiêu chí đánh giá giải pháp, dịch vụ Trung tâm giám sát điều hành an toàn, an ninh mạng (SOC)</p>
+                            </div>
+                            <div class="technology-content">
+                                <p>Loại văn bản: Quyết định</p>
+                                <p>Loại nền tảng số: Nền tảng trung tâm giám sát điều hành an toàn thông tin mạng (SOC)</p>
+                                <p>Ngày ban hành: 28/01/2022</p>
+                                <p>Trích yếu: Ban hành Tiêu chí đánh giá giải pháp, dịch vụ Trung tâm giám sát điều hành an toàn, an ninh mạng (SOC)</p>
+                                <p>Nguồn:</p>
+                            </div>
+                        </div>
+                        <div class="download flex uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center text-amber-600">
+                            <p>Tải xuống</p>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content p-3">
+                            <div class="technology-title">
+                                <p class="text-base font-bold">Quyết định số 1758/QĐ-BTTTT ban hành Bộ tài liệu Yêu cầu cơ bản về chức năng, tính năng kỹ thuật của Nền tảng khảo sát, thu thập ý kiến người dân</p>
+                            </div>
+                            <div class="technology-content">
+                                <p>Loại văn bản: Quyết định</p>
+                                <p>Loại nền tảng số: Nền tảng họp trực tuyến thế hệ mới</p>
+                                <p>Ngày ban hành: 28/01/2022</p>
+                                <p>Trích yếu: Ban hành Bộ tài liệu Yêu cầu cơ bản về chức năng, tính năng kỹ thuật của Nền tảng khảo sát, thu thập ý kiến người dân</p>
+                                <p>Nguồn:</p>
+                            </div>
+                        </div>
+                        <div class="download flex uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center text-amber-600">
+                            <p>Tải xuống</p>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content p-3">
+                            <div class="technology-title">
+                                <p class="text-base font-bold">Quyết định số 3532/QĐ-BYT Quy định về xây dựng và triển khai Hệ thống thông tin quản lý Trạm Y tế xã, phường, thị trấn</p>
+                            </div>
+                            <div class="technology-content">
+                                <p>Loại văn bản: Quyết định</p>
+                                <p>Loại nền tảng số: Nền tảng họp trực tuyến thế hệ mới</p>
+                                <p>Ngày ban hành: 28/01/2022</p>
+                                <p>Trích yếu: Quy định về xây dựng và triển khai Hệ thống thông tin quản lý Trạm Y tế xã, phường, thị trấn</p>
+                                <p>Nguồn:</p>
+                            </div>
+                        </div>
+                        <div class="download flex uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center text-amber-600">
+                            <p>Tải xuống</p>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content p-3">
+                            <div class="technology-title">
+                                <p class="text-base font-bold">Quyết định số 1051/QĐ-BTTTT Ban hành Yêu cầu cơ bản về chức năng, tính năng kỹ thuật của Nền tảng học trực tuyến mở đại trà (MOOCs) (Phiên bản 1⋅0)</p>
+                            </div>
+                            <div class="technology-content">
+                                <p>Loại văn bản: Quyết định</p>
+                                <p>Loại nền tảng số: Nền tảng họp trực tuyến thế hệ mới</p>
+                                <p>Ngày ban hành: 28/01/2022</p>
+                                <p>Trích yếu: Ban hành Yêu cầu cơ bản về chức năng, tính năng kỹ thuật của Nền tảng học trực tuyến mở đại trà (MOOCs) (Phiên bản 1⋅0)</p>
+                                <p>Nguồn:</p>
+                            </div>
+                        </div>
+                        <div class="download flex uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center text-amber-600">
+                            <p>Tải xuống</p>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content p-3">
+                            <div class="technology-title">
+                                <p class="text-base font-bold">Văn bản số 1145/BTTTT-CATTT về việc hướng dẫn bộ tiêu chí, chỉ tiêu kỹ thuật để đánh giá và lựa chọn giải pháp nền tảng điện toán đám mây phục vụ Chính phủ điện tử/Chính quyền điện tử</p>
+                            </div>
+                            <div class="technology-content">
+                                <p>Loại văn bản: Quyết định</p>
+                                <p>Loại nền tảng số: Nền tảng họp trực tuyến thế hệ mới</p>
+                                <p>Ngày ban hành: 28/01/2022</p>
+                                <p>Trích yếu: V/v hướng dẫn bộ tiêu chí, chỉ tiêu kỹ thuật để đánh giá và lựa chọn giải pháp nền tảng điện toán đám mây phục vụ Chính phủ điện tử/Chính quyền điện tử</p>
+                                <p>Nguồn:</p>
+                            </div>
+                        </div>
+                        <div class="download flex uppercase flex justify-center gap-3 bg-amber-200 py-3 items-center text-amber-600">
+                            <p>Tải xuống</p>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
                 </div>
+
                 <a href="" class="flex uppercase text-orange-500 items-center justify-center text-center mt-5">
                     <span>Tất cả tiêu chí</span>
                     <i class="fa-solid fa-angle-right ml-2"></i>
