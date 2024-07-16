@@ -8,8 +8,11 @@
     border-bottom: 1px solid #d1d5db;
 }
 
-
-
+.menu-item.active {
+    color: #FFA500;
+    font-weight: bold;
+    border-bottom: 2px solid #FFA500;
+}
 .login{
     width: 95px;
 }
